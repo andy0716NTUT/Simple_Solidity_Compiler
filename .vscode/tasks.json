@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Active Solidity File",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": ["run", "compile", "--", "${relativeFile}"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Compile All Solidity Files",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": ["run", "compile:all"],
+      "problemMatcher": []
+    }
+  ]
+}

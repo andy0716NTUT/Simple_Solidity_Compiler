@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Compile Active Solidity (Run and Debug)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/compile.js",
+      "args": ["${relativeFile}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Compile All Solidity (Run and Debug)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/compile.js",
+      "args": ["--all"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
